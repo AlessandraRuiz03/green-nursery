@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jardineria.View.riegoController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="393.0" fitWidth="705.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Fondo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="341.0" fitWidth="328.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/leaves.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a1acc" height="108.0" stroke="BLACK" strokeType="INSIDE" width="703.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#823305cd" height="80.0" layoutX="18.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="219.0" />
+            <TextField fx:id="fecha" alignment="CENTER" layoutX="50.0" layoutY="148.0" prefHeight="27.0" prefWidth="173.0" promptText="Fecha" />
+            <Label layoutX="95.0" layoutY="115.0" text="Registro*">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#801116" />
+                        <Stop color="#460845" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="115.0" layoutY="27.0" prefHeight="50.0" prefWidth="98.0" text="Riego" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="34.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ddff" />
+                        <Stop color="#198d49" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="tipoProducto" alignment="CENTER" layoutX="50.0" layoutY="183.0" prefHeight="27.0" prefWidth="173.0" promptText="tipo producto" />
+            <Label layoutX="96.0" layoutY="250.0" text="Eliminar*">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#801116" />
+                        <Stop color="#460845" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="registrar" layoutX="105.0" layoutY="217.0" mnemonicParsing="false" onAction="#clickRegistrar" style="-fx-background-color: #00ff00;" text="Registrar">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <TextField fx:id="IdRiegoE" alignment="CENTER" layoutX="18.0" layoutY="285.0" prefHeight="10.0" prefWidth="117.0" promptText="ID Riego" />
+            <Label layoutX="89.0" layoutY="329.0" text="Actualizar*">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#801116" />
+                        <Stop color="#460845" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button fx:id="eliminar" layoutX="158.0" layoutY="283.0" mnemonicParsing="false" onAction="#clickEliminar" prefHeight="12.0" prefWidth="64.0" style="-fx-background-color: #ff0000;" text="Eliminar" textFill="#fffefe">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <TextField fx:id="IdRiego" alignment="CENTER" layoutX="18.0" layoutY="359.0" prefHeight="25.0" prefWidth="117.0" promptText="ID Riego" />
+            <TextField fx:id="fechaA" alignment="CENTER" layoutX="18.0" layoutY="397.0" prefHeight="20.0" prefWidth="117.0" promptText="Fecha" />
+            <TextField fx:id="tipoProductoA" alignment="CENTER" layoutX="18.0" layoutY="430.0" prefHeight="10.0" prefWidth="117.0" promptText="tipo Producto" />
+            <Button fx:id="actualizar" layoutX="158.0" layoutY="384.0" mnemonicParsing="false" onAction="#ClickActualizar" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #fffb00;" text="Actualizar">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <Button fx:id="mostrarDatos" layoutX="310.0" layoutY="455.0" mnemonicParsing="false" onAction="#clickMostrarDatos" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #00a2ff;" text="Mostrar Datos">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <Button fx:id="RegresarR" layoutX="525.0" layoutY="455.0" mnemonicParsing="false" onAction="#ClickRegresarR" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #fc9007;" text="Regresar">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <ImageView fitHeight="73.0" fitWidth="64.0" layoutX="31.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/watering-can.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="mostrar" editable="true" layoutX="282.0" layoutY="74.0" prefHeight="363.0" prefWidth="399.0" style="-fx-background-color: #52FFDA;">
+              <columns>
+                <TableColumn fx:id="idRiego" prefWidth="109.0" text="id_riego" />
+                <TableColumn fx:id="Fecha" prefWidth="126.0" text="fecha" />
+                  <TableColumn fx:id="TipoProducto" prefWidth="163.0" text="tipo Producto" />
+              </columns>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="258.0" layoutY="1.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="1.0" />
+      <Label layoutX="370.0" layoutY="14.0" prefHeight="50.0" prefWidth="235.0" text="Green Nursery" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#00dcf0" />
+                  <Stop color="#198d49" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

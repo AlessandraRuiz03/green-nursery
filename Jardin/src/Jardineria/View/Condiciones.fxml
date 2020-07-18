@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Jardineria.View.condicionesController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="584.0" fitWidth="705.0" layoutX="-2.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Fondo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="318.0" fitWidth="322.0" layoutX="1.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/leaves.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a1acc" height="120.0" stroke="BLACK" strokeType="INSIDE" width="700.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#823305cd" height="80.0" layoutX="16.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="201.0" />
+            <Label layoutX="80.0" layoutY="44.0" text="Condiciones ">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0f5421" />
+                        <Stop color="#00ffee" offset="0.007662835249042145" />
+                        <Stop color="#128321" offset="0.9923371647509578" />
+                        <Stop color="#021704" offset="0.9961685823754789" />
+                        <Stop color="#021704" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Separator layoutX="230.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="6.0" />
+            <Label layoutX="83.0" layoutY="132.0" text="Registro*">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#801116" />
+                        <Stop color="#460845" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <TextField fx:id="condicion" alignment="CENTER" layoutX="31.0" layoutY="168.0" prefHeight="27.0" prefWidth="170.0" promptText="Condicion" />
+            <Button fx:id="registrar" layoutX="90.0" layoutY="209.0" mnemonicParsing="false" onAction="#Registro" style="-fx-background-color: #00ff00;" text="Registrar">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <TextField fx:id="idCondicionE" alignment="CENTER" layoutX="30.0" layoutY="281.0" prefHeight="27.0" prefWidth="170.0" promptText="ID Condicion" />
+            <Button fx:id="eliminar" layoutX="86.0" layoutY="318.0" mnemonicParsing="false" onAction="#Eliminar" prefHeight="20.0" prefWidth="59.0" style="-fx-background-color: #ff0000;" text="Eliminar" textFill="#f8f8f8">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <TextField fx:id="idCondicion" alignment="CENTER" layoutX="30.0" layoutY="389.0" prefHeight="27.0" prefWidth="170.0" promptText="ID Condicion" />
+            <TextField fx:id="Condicion" alignment="CENTER" layoutX="30.0" layoutY="424.0" prefHeight="27.0" prefWidth="170.0" promptText="Condicion" />
+            <Button fx:id="actualizar" layoutX="76.0" layoutY="466.0" mnemonicParsing="false" onAction="#Actualizar" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #fffb00;" text="Actualizar">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <Button fx:id="motrarDatos" layoutX="305.0" layoutY="466.0" mnemonicParsing="false" onAction="#MostrarDatos" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #00a2ff;" text="Ver Datos">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <Button fx:id="RegresarC" layoutX="549.0" layoutY="466.0" mnemonicParsing="false" onAction="#ClickRegresarC" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #fc9007;" text="Regresar">
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
+            <ImageView fitHeight="51.0" fitWidth="44.0" layoutX="23.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/condition.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="357.0" text="Actualizar*">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#801116" />
+                        <Stop color="#460845" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="83.0" layoutY="246.0" text="Eliminar*">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#801116" />
+                        <Stop color="#460845" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="344.0" layoutY="26.0" prefHeight="50.0" prefWidth="238.0" text="Green Nursery">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0f5421" />
+                        <Stop color="#00d9ff" offset="0.007662835249042145" />
+                        <Stop color="#128321" offset="0.9923371647509578" />
+                        <Stop color="#021704" offset="0.9961685823754789" />
+                        <Stop color="#012c05" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold Italic" size="34.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TablaDatos" layoutX="295.0" layoutY="91.0" prefHeight="359.0" prefWidth="350.0" style="-fx-background-color: #6EEFF2;">
+         <columns>
+            <TableColumn fx:id="IDCondicion" prefWidth="161.0" text="ID Condicion" />
+            <TableColumn fx:id="CondicioN" prefWidth="189.0" text="CondicioN" />
+         </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>
